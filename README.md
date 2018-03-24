@@ -40,6 +40,7 @@ should run the following command after `make test`:
 
 ```
 $ make gcov
+$ make lcov
 ```
 
 The coverage reports will be into `Coverage` folder.
