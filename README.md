@@ -11,10 +11,11 @@ a build tool.
 
 ## Installing
 
-You need the following programs installed on your system:
+To run this project the following programs need to be installed on your system:
 - Cmake
 - Check
 - Gcov
+- Lcov
 - Valgrind
 
 Then, do as follows:
@@ -35,15 +36,16 @@ After running `make test`, you will find the test files into `Testing` folder.
 
 ### Code Coverage Support
 
-This example implements Code Coverage Reports. If you want to check them, you
-should run the following command after `make test`:
+This example implements Code Coverage Reports using either using either gcov or lcov.
+If you want to check them, you should run the following command after `make test`:
 
 ```
 $ make gcov
 $ make lcov
 ```
 
-The coverage reports will be into `Coverage` folder.
+The coverage reports will be into `Coverage` folder. In the case of lcov, you
+can see into the browser, opening the `index.html` file on the folder above.
 
 ### Valgrind Support
 
